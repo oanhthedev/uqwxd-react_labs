@@ -22,11 +22,8 @@ myStore.subscribe(()=>console.log(myStore.getState()));
 
 //throughout the application
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render
-(  
-   
+root.render(  
 <Provider store={myStore}> <App/> </Provider>
-
 );
 // // const container = document.getElementById('root');
 // const root = createRoot(container); 
