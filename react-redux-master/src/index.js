@@ -9,16 +9,13 @@ import {Provider} from 'react-redux'
 import myReducer from './reducers'
 import './index.css'
 
-
 //Create the store
 const myStore = createStore(myReducer);
 
 //This will console log the current state everytime the state changes
 myStore.subscribe(()=>console.log(myStore.getState()));
 
-
 //Enveloping the App inside the Provider, ensures that the states in the store are available
-
 
 //throughout the application
 const root = ReactDOM.createRoot(document.getElementById('root'));
